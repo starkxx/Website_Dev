@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevate</title>
+    <link href="styles.css"   rel="stylesheet">
+    <link href="Images\Black Hawk Eagle Logo Design (1) 1.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="nav-bar">
+        <nav>
+            <a href="index.html" id="head-logo"><img src="Images\Black Hawk Eagle Logo Design (1) 1.png" alt="Logo" id="logo-header"></a> 
+            <p class="Elevate">ELEVATE</p>
+            <ul>
+                <li><a href="signup.html">Login</a></li>
+                <li><a href="#index.html#Product">Bike</a></li>
+                <li><a href="testride.html">Test Ride</a></li>
+                <li><a href="purchasenow.html">Purchase</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <main>
+    <p id="buynow">One Last Step To Purchase Your Dream Bike</p>
+    <div id="bike-selection">
+        <div class="bike">
+            <p>Garuda X</p>
+            <img src="bike.jpg" alt="bike-1" id="img-area">
+            <!-- https://www.youtube.com/watch?v=Gm3znBN0SCM&ab_channel=insideTheDiv -->
+            <div class="colors">
+                <p id="select-color">Select Color:</p>
+                <button onclick="bike1()"><div class="color-1"></div></button>
+                <button onclick="bike2()"><div class="color-2"></div></button>
+                <button onclick="bike3()"><div class="color-3"></div></button>
+                <button onclick="bike4()"><div class="color-4"></div></button>
+            </div>
+            <script>
+                var img = document.getElementById("img-area");
+                function bike1(){
+                    img.src='bike.jpg';
+                }
+                function bike2(){
+                    img.src='home_gallery_2.jpg';
+                }
+                function bike3(){
+                    img.src='home_gallery_3.jpg';
+                }
+                function bike4(){
+                    img.src='home_gallery_1.jpg';
+                }
+
+            </script>
+
+            <div class="buy-now">
+                <p>Buy Now</p>
+            </div>
+        </div>
+        <div class="bike">
+            <p>Garuda</p>
+            <img src="home_gallery_1.jpg" alt="bike-1" id="img-area2">
+            
+            <div class="colors">
+                <p id="select-color">Select Color:</p>
+                <button onclick="bike5()"><div class="color-4"></div></button>
+               
+                <button onclick="bike6()"><div class="color-3"></div></button>
+            </div>
+            <script>
+                var img2 = document.getElementById("img-area2");
+                function bike5(){
+                    img2.src='home_gallery_1.jpg';
+                }
+             
+                function bike6(){
+                    img2.src='home_gallery_3.jpg';
+                }
+
+            </script>
+            <div class="buy-now">
+                <p>Buy Now</p>
+            </div>
+        </div>
+    </div>
+</main>
+    
+</body>
+</html>
